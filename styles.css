@@ -1,0 +1,418 @@
+/*importação do google fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap'); 
+
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #000000, #8B0000);
+    color: #fff;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.centralizar_produtos{
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+section h2 {
+    color: grey; /* Cor do título */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer {
+    background: linear-gradient(to right,black, red, black);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+img.logotipo{
+    border: none; /* remover borda do logo tipo*/
+}
+img {
+    border: 2px solid red;
+    border-radius: 10px; /* Adiciona cantos arredondados */
+
+}
+.imagem-container {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre as imagens */
+    margin-top: 30px; 
+    
+}
+.imagem-container img {   /* AQUI ESTA A ALTURA E COMPRIMENTO DAS IMAGENS DENTRO DO CONTAINER*/
+    margin-right: 20px; /* Espaçamento entre as imagens */
+    width: 300px;
+    height: 300px;
+    /* ESSE CODIGO ESTA DANDO UM EFEITO DEGRADE NO CARROCEL*/
+   box-shadow: 11px 13px 19px 4px rgba(181,16,16,1), -9px -16px 16px 4px rgba(0,0,0,1);
+}
+header a:hover {
+    background-color: red;
+}
+h1 {
+  color: red;
+  font-family: 'Cinzel', serif;
+  font-size: 45px;
+}
+h2{font-family:'Arial Narrow Bold', sans-serif;
+text-align: center;}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.caixa-texto {
+    background-color: black; 
+    padding: 20px; 
+    border-radius: 5px; 
+}
+.caixa-texto p {
+    margin: 0; 
+}
+.icone-voltar {
+    position: absolute; 
+    top: 15px; 
+    left: 50px; 
+    z-index: 999; 
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.icone-voltar:hover img {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% */
+}
+.icone-texto {
+    display: none; /* Inicialmente oculta o texto */
+    position: absolute; /* Define a posição absoluta em relação ao ícone */
+    top: -20px; /* Define a distância do topo do ícone */
+    left: 50%; /* Define a distância da esquerda do ícone */
+    transform: translateX(-50%); /* Centraliza horizontalmente em relação ao ícone */
+    background-color: black; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 12px; /* Tamanho da fonte */
+    white-space: nowrap; /* Impede que o texto seja quebrado em várias linhas */
+}
+.icone-voltar:hover .icone-texto {
+    display: block; /* Exibe o texto quando o mouse está sobre o ícone */
+}
+.produto {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+.produto h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.produto p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.produto button {  /* Botoes da loja*/
+    font-size: 16px;
+    font-style: initial;
+    padding: 5px 10px;
+    background-color: dodgerblue;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button {     /* Botoes do login e do cadastro*/
+    font-size: 10px;
+    padding: 5px 10px;
+    background-color: lightskyblue;
+    color: black;
+    font-size: 30px;
+}
+button:hover {
+    background-color: darkslategrey; /* Altere para a cor desejada */
+}
+section img {
+    max-width: 100%;
+    height: auto;
+}
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+.produto img:hover {
+    transform: scale(1.1); /* Aumenta em 10% */
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+.produtos-background {
+    background: linear-gradient(to bottom, red,black,red,black); /* Degradê de preto para vermelho */
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
+.preco-texto, .preco {
+    color: yellow;
+    font-size: 18px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    overflow-x: hidden;
+    text-indent: 40px; /*esse codigo da espaço no paragrafo */
+}
+.texto-lateral {
+    width: calc(50% - 20px); /* 50% menos o espaçamento */
+    padding: 0 10px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: justify;
+    font-size: 16px;
+}
+.imagem-lateral {
+    width: calc(50% - 20px); /* 50% menos o espaçamento */
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.imagem-central {
+    text-align: center; /* Alinha a imagem no centro */
+    margin-bottom: 20px; /* Adiciona um espaço na parte inferior */
+    max-width: 100%;
+}
+.texto-inferior {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 100%;
+}
+label{font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 250px;
+    margin-bottom: -30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 8px solid black; /* Adiciona uma borda preta */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    width: 400px; /* Ajuste conforme necessário */
+    background: linear-gradient(to bottom, red, black); /* Degrade vermelho */
+}
+h3{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+.botao-amarelo {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.botao-amarelo:hover {
+    background-color: darkgoldenrod;
+}
+.produto-detalhes {
+    width: 80%; /* Defina a largura desejada */
+    margin: 50px auto; /* Centraliza verticalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-detalhes img {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-right: 20px; /* Ajusta o espaçamento à direita da imagem */
+}
+
+.produto-detalhes div {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.produto-detalhes h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.produto-detalhes p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.preco-texto {
+    font-weight: bold;
+}
+
+.forma-pagamento {
+    color: #007bff;
+}
+h4 {
+    font-size: 30px;
+    color: gray;
+    font-style: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h5 {
+    font-family: 'Roboto Condensed', sans-serif; /* Define a fonte */
+    text-align: center; /* Centraliza o texto */
+    color: gray;
+    font-size: 40px;
+}
+
+.luvas-muay-thai-body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom,red, #000000, red);
+    color: #fff;
+}
+
+
+.carrinho-icon {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    font-size: 30px;
+   color: red;
+}
+.carrinho-icon:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% quando passa o mouse sobre ele */
+    animation: bounce 0.5s; /* Adiciona a animação de pulo */
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+/* google fonte - mudando fonte*/
+.tauri-regular { 
+    font-family: "Tauri", sans-serif;
+    font-weight: 450px;
+    font-style: normal;
+}
+.comentario textarea {
+    width: calc(100% - 60px); /* Calcula a largura do textarea subtraindo o espaço da imagem e a margem */
+    height: 100px; /* Aumenta a altura da caixa de texto */
+    margin-bottom: 10px;
+    border: 2px solid #ffc107; /* Adiciona uma borda amarela */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    resize: vertical; /* Permite redimensionamento vertical */
+    font-family: 'Roboto Condensed', sans-serif; /* Define a fonte */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+.comentario textarea:focus {
+    border-color: #f0ad4e; /* Altera a cor da borda ao focar */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+.comentario {
+    margin-bottom: 20px; /* Adiciona espaço entre os comentários */
+    border-bottom: 2px solid #ccc; /* Adiciona uma linha entre os comentários */
+    padding-bottom: 20px; /* Adiciona espaço abaixo de cada comentário */
+    display: flex; /* Usa flexbox para alinhar a imagem e o texto */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.comentario-info {
+    display: flex; /* Usa flexbox para alinhar a imagem e o nome */
+    flex-direction: column; /* Coloca os itens em uma coluna */
+    align-items: center; /* Alinha os itens ao centro horizontalmente */
+    text-align: center; /* Alinha o texto centralmente */
+}
+.comentarios button {
+    display: block; /* Faz o botão ocupar toda a largura do container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.comentarios button:hover {
+    background-color: darkgoldenrod; /* Altera a cor do fundo ao passar o mouse */
+}
+.avatar {
+    width: 70px; /* Tamanho da imagem do avatar */
+    height: 70px;
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    margin-right: 10px; /* Espaçamento à direita da imagem */
+}
+/*.video-container {
+   
+}
+.video-container iframe {
+    width: 800px;
+    height: 450px;
+}*/
+
+.video-container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+   
+  }
+  
+  .logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer; /* Adiciona o cursor de ponteiro para indicar que é clicável */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave de opacidade */
+  }
+  
+  .logo-overlay img {
+    width: 100px; /* ajuste o tamanho do logo conforme necessário */
+  }
+  
+  .logo-overlay:hover {
+    opacity: 0.7; /* Define a opacidade quando o mouse está sobre o logo */
+  }
+  video{
+    width: 1000px;
+  }
+ 
+  
+  
